@@ -52,7 +52,7 @@ async def search(_, message: Message):
     for count in range(min(i, results)):
         if data[count]['type'] == "file":
             text += f"""
-📄  [{data[count]['name']}
+📄  {data[count]['name']}
 **Size:** __{data[count]['size']}__
 **[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
 
