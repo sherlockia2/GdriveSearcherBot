@@ -107,7 +107,7 @@ async def previous_callbacc(_, CallbackQuery: cbq):
         try:
             if data[count]['type'] == "file":
                 text += f"""
-📄  [{data[count]['name']}
+📄  {data[count]['name']}
 **Size:** __{data[count]['size']}__
 **[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
 
@@ -155,7 +155,7 @@ async def next_callbacc(_, cb: cbq):
         try:
             if data[count]['type'] == "file":
                 text += f"""
-📄  [{data[count]['name']}
+📄  {data[count]['name']}
 **Size:** __{data[count]['size']}__
 **[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
 
